@@ -12,6 +12,8 @@ http://localhost:8802/api/v1/greeting
 
 http://localhost:8802/api/v1/quote
 
+http://localhost:8802/api/v1/user/all
+
 
 # Swagger
 
