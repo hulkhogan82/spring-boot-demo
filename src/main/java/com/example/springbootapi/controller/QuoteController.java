@@ -1,6 +1,6 @@
-package com.api.springdemo.presentation;
+package com.example.springbootapi.controller;
 
-import com.api.springdemo.model.Quote;
+import com.example.springbootapi.model.Quote;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 public class QuoteController
 {
     private static final Logger log = LoggerFactory.getLogger(QuoteController.class);
-    
+
     @RequestMapping(value = "/api/v1/quote", method = RequestMethod.GET)
     public Quote getquote() {
         final RestTemplate restTemplate = new RestTemplate();

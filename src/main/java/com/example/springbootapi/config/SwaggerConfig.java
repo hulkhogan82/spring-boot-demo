@@ -1,4 +1,4 @@
-package com.api.springdemo.config;
+package com.example.springbootapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,13 +12,13 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
-@EnableSwagger2
+//@EnableSwagger2
 public class SwaggerConfig {
-    @Bean
+    /*@Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).select()
                 .apis(RequestHandlerSelectors
-                        .basePackage("com.api.springdemo"))
+                        .basePackage("com.example.springbootapi"))
                 .paths(PathSelectors.any())
                 .build().apiInfo(apiEndPointsInfo());
     }
@@ -31,4 +31,7 @@ public class SwaggerConfig {
                 .version("V1.0")
                 .build();
     }
+
+     */
+
 }

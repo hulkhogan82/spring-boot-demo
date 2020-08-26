@@ -1,4 +1,4 @@
-package com.api.springdemo.config;
+package com.example.springbootapi.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,17 +7,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AppConfig {
-    
+
     @Autowired
     private Environment env;
 
-    public String GetAppName()
-    {
+    public String GetAppName() {
         return env.getProperty("app.name");
     }
 
-    public String GetAppDesc()
-    {
+    public String GetAppDesc() {
         return env.getProperty("app.description");
     }
 
@@ -26,13 +24,12 @@ public class AppConfig {
 
     @Value("${app.description}")
     private String appDescByValue;
-    
-    public String getAppNameByValue()
-    {
+
+    public String getAppNameByValue() {
         return appNameByValue;
     }
-    public String getAppDescByValue()
-    {
+
+    public String getAppDescByValue() {
         return appDescByValue;
     }
 }

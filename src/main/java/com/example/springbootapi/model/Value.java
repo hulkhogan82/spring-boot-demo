@@ -1,4 +1,4 @@
-package com.api.springdemo.model;
+package com.example.springbootapi.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -33,5 +33,4 @@ public class Value{
                 ", quote='" + quote + '\'' +
                 '}';
     }
-
 }
